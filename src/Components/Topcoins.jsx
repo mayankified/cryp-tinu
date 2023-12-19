@@ -5,6 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { HashLink } from 'react-router-hash-link';
+
 
 const Topcoins = () => {
 
@@ -96,10 +98,10 @@ const Topcoins = () => {
 
                   </div>
                 </div>
-                <Link to={`/${dat.id}`}>
+                <HashLink to={`/${dat.id}/#home`}>
                   <button className='bg-[#873cc3] px-2 group-hover:bg-primary
                 border-[2px] border-solid group-hover:text-[#c3a4dc] border-[#873cc3] text-white font-poppins rounded-xl my-4 py-2 font-medium cursor-pointer'>Details</button>
-                </Link>
+                </HashLink>
               </div>
             ))}
         </div>
