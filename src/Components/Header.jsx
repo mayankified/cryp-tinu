@@ -52,8 +52,8 @@ const Header = () => {
             <ul className='list-none flex-col flex justify-end items-center flex-1'>
               {
                 navLinks.map((nav, index) => (
-                  <li key={nav.id} onClick={()=>setToggle(false) className={`font-poppins text-white font-normal text-[16px] mb-4 hover:text-dimWhite`}>
-                    <HashLink to={`/#${nav.id}`}>{nav.title}</HashLink>
+                  <li key={nav.id} onClick={()=>setToggle(false)} className={`font-poppins text-white font-normal text-[16px] mb-4 hover:text-dimWhite`}>
+                    <HashLink to={`/#${nav.id}`} >{nav.title}</HashLink>
                   </li>
                 ))
               }
