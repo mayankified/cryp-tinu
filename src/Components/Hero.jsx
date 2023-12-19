@@ -9,7 +9,7 @@ const Hero = () => {
 
         <div className='flex  '>
           <div className='flex flex-col justify-between items-center w-full'>
-            <h1 className='font-poppins font-bold text-white text-[52px] leading-[75px]'>
+            <h1 className='font-poppins font-bold text-white ss:text-[52px] text-[40px] ss:leading-[75px] leading-[60px]'>
               REALTIME
               <br />
               <span className='textp'>CRYPTO PRICE</span><br />
