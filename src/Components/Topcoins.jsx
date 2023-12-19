@@ -41,8 +41,12 @@ const Topcoins = () => {
       items: 3
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 528, min: 0 },
       items: 2
+    },
+    mssas: {
+      breakpoint: { max: 412, min: 0 },
+      items: 1
     }
   };
 
@@ -77,12 +81,12 @@ const Topcoins = () => {
       </div>
       <div className='flex flex-col items-center py-12' id='coin'>
 
-        <div className='w-fit my-4 bg-[#873cc3] flex justify-center items-center py-6 px-20 rounded-[30px] '><h1 className='text-[#d6d4d8] font-semibold font-poppins text-[32px] mb-3'>Top 100 Cryptos in Market</h1></div>
-        <div className='flex flex-wrap justify-evenly'>
+        <div className='w-fit my-4 bg-[#873cc3] flex justify-center items-center py-6 ss:px-20 px-6 rounded-[30px] text-center'><h1 className='text-[#d6d4d8] font-semibold font-poppins ss:text-[32px] text-[24px]'>Top 100 Cryptos in Market</h1></div>
+        <div className='flex flex-wrap justify-evenly mx-4'>
           {
 
             coins.map((dat) => (
-              <div key={dat.id} className='flex flex-col group justify-start items-center w-[250px] bg-discount-gradient rounded-xl p-4 mx-4 my-6 h-[260px]'>
+              <div key={dat.id} className='flex flex-col group justify-start items-center ss:w-[250px] w-[80vw] max-w-[250px] bg-discount-gradient rounded-xl p-4 mx-4 my-6 h-[260px]'>
                 <h2 className='font-poppins text-white text-[18px] group-hover:text-dimWhite'>{dat.name}</h2>
                 <img src={dat.image} alt="" className='w-[54px] h-auto m-3' />
                 <div className='bgp w-full rounded-xl flex justify-center items-center p-[2px] IImt-4'>
