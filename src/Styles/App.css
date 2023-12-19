@@ -1,0 +1,10 @@
+* {
+  scroll-behavior: smooth;
+}
+.Toastify__toast--warning {
+  background: #ffe8bc !important;
+}
+.Toastify__toast--error {
+  background: #00040f !important;
+}
+
